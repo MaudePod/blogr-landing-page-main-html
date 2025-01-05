@@ -1,0 +1,79 @@
+section[class="one"] {
+    display: grid;
+    place-items: center;
+    padding: 100px;
+    background: var(--very-light-red);
+    border-bottom-left-radius: 125px;
+}
+
+section[class="one"] img {
+    position: absolute;
+    top: -158cqh;
+    z-index: -1;
+    right: -101cqw;
+}
+
+section[class="one"] h1 {
+    font-size: 3em;
+    color: white;
+}
+
+section[class="one"] h3 {
+    color: white;
+}
+
+button[id="start-for-free"] {
+    display: grid;
+    place-content: center;
+    background: white;
+    color: var(--light-red-cta-text);
+    width: max-content;
+    height: 25px;
+    padding: 20px;
+    border-radius: 30px;
+    outline-width: 0;
+    box-sizing: border-box;
+    border-color: transparent;
+    outline-color: transparent;
+    cursor: pointer;
+}
+
+button[id="learn-more"] {
+    display: grid;
+    place-content: center;
+    background: var(--light-red-cta-text);
+    color: white;
+    font-weight: 700;
+    width: max-content;
+    height: 25px;
+    padding: 20px;
+    border-radius: 30px;
+    outline-width: 0;
+    box-sizing: border-box;
+    border-color: white;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+section[class="one"] section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+}
+
+@container (inline-size < 1000px) {
+    section[class="one"] {
+        text-align: center;
+        padding: 5% 5% 100px 5%;
+        padding: 0 0 100px 0;
+        gap: 10px;
+        height: max-content;
+        width: 100%;
+        max-width: 100cqw;
+    }
+
+    section[class="one"] h1 {
+        font-size: 2em;
+    }
+}
+

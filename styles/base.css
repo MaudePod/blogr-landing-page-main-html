@@ -1,0 +1,90 @@
+:root {
+    /*Primary*/
+    --light-red-cta-text: hsl(356, 100%, 66%);
+    --very-light-red-cta-hover-background: hsl(355, 100%, 74%);
+    --very-dark-blue-headings: hsl(208, 49%, 24%);
+    /*Neutral*/
+    --grayish-blue-footer-text: hsl(240, 2%, 79%);
+    --very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+    --very-dark-black-blue-footer-background: hsl(240, 10%, 10%);
+    /*Gradient*/
+    --very-light-red: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    --very-dark-gray-blue: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+
+    /*misc*/
+    --nav-border-radius: 10px;
+}
+@font-face {
+    font-family: 'Overpass';
+    src: url(../fonts/Overpass/Overpass-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+body {
+    display: grid;
+    width: 100svw;
+    min-height: 100svh;
+    container: body / inline-size;
+    margin: 0;
+    background: whitesmoke;
+    font-family: 'Ubuntu';
+}
+
+main {
+    display: grid;  
+    width: 100cqw;
+    min-height: 100cqh;
+    container: main / inline-size;
+    max-width: 1440px;
+    place-self: center;
+    background: white;
+}
+
+header {
+    display: grid;
+    width: 100cqw;
+    box-sizing: border-box;
+    height: 100px;
+    padding: 25px 10cqw 25px 10cqw;
+    align-content: center;
+    background: var(--very-light-red);
+    max-width: 1440px;
+    place-self: center;
+}
+h1{
+      font-family: 'Overpass';
+}
+h2,
+h3 {
+    color: var(--very-dark-blue-headings);
+    font-weight: 700;
+    font-size: 1.6em;
+      font-family: 'Overpass';
+}
+
+h3 {
+    font-size: 1.4em;
+      font-family: 'Overpass';
+}
+
+a,
+:visited,
+a:hover {
+    text-decoration: none;
+}
+
+div[class="attribution"] {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@container (inline-size < 1000px) {
+    main {
+        overflow-x: clip;
+    }
+}

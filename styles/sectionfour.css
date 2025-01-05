@@ -1,0 +1,42 @@
+section[class="four"] {
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+section[class="four"] section[class="right"] {
+	display: grid;
+    box-sizing: border-box;
+    padding: 10%;
+}
+section[class="three"] {
+
+}
+section[class="four"] h3{
+    color: var( --very-dark-grayish-blue-body-copy);
+}
+
+section[class="four"] p{
+    color: var( --very-dark-grayish-blue-body-copy);
+
+}
+section[class="four"] img {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-28%);
+}
+
+@container (inline-size < 1000px) {
+    section[class="four"] {
+        grid-template-columns: 1fr;
+        background: white;
+        text-align: center;
+    }
+
+    section[class="four"] h2 {
+        font-size: 1.8em;
+    }
+    section[class="four"] img{
+        transform: unset;
+    }
+}
