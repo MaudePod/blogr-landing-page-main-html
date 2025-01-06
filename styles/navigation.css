@@ -221,7 +221,10 @@ svg[class="icon-arrow-dark"] {
     label[for="hamburger"] {
         display: grid;
     }
-
+    section[class="menu"] {
+        display: none;
+        transition: 500ms opacity, 500ms display allow-discrete;
+    }
     nav:has(input[id="hamburger"]:checked) {
         label[for="close"] {
             display: grid;
@@ -259,6 +262,8 @@ svg[class="icon-arrow-dark"] {
 
         section[class="menu"] {
             display: none;
+            transition: 500ms opacity, 500ms display allow-discrete;
+            opacity: 0;
         }
 
     }
@@ -343,5 +348,10 @@ svg[class="icon-arrow-dark"] {
         height: min-content;
         align-self: end;
         color: var(--grayish-blue-footer-text);
+    }
+}
+@starting-style{
+    section[class="menu"] {
+        opacity:0;
     }
 }

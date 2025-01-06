@@ -48,9 +48,10 @@ button[id="learn-more"] {
     height: 25px;
     padding: 20px;
     border-radius: 30px;
-    outline-width: 0;
+    outline-width: 1px;
+    outline-color: white;
+    border:0;
     box-sizing: border-box;
-    border-color: white;
     border-width: 1px;
     cursor: pointer;
 }
